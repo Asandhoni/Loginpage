@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <title>Login Page</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="loginpanel">
+      <div class="signu-up-panel" id="error">
+       
+
+        <form class="login" method="POST" action="loginpage.php">
+          <br /><br /><br />
+          <h1>Login</h1>
+          <p>Username</p>
+          <input
+            type="text"
+            name="username"
+            placeholder="Enter Username"
+            id="username"
+            required
+          />
+          <p>Password</p>
+          <input
+            type="password"
+            name="password"
+            placeholder="Enter Password"
+            id="password"
+            required
+          />
+         
+          <p id="pop"></p>
+          <button name="login" onclick="loginvalidate()">Login</button> <br/><br/><br/>
+         
+         
+        </form>
+
+       
+      </div>
+    </div>
+
+
+   
+    <script src="signuppage.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  </body>
+</html>
